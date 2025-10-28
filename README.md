@@ -18,6 +18,10 @@ This module allows players to get different character services directly from the
 4.  **Faction Change**: Give a faction change at character selection screen
 5.  **Name Change**: Give a renaming at character selection screen
 
+This module is already localized for: English, German, Spanish and French
+
+Next, I should introduce a pricing feature to not give all of this services for zero gold.
+
 ---
 
 ### How to install
