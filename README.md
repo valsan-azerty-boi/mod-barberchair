@@ -18,6 +18,8 @@ This module allows players to get different character services directly from the
 4.  **Faction Change**: Give a faction change at character selection screen
 5.  **Name Change**: Give a renaming at character selection screen
 
+This module is already localized for: English, German, Spanish and French
+
 ---
 
 ### How to install
@@ -51,10 +53,20 @@ Barberchair.Enable = 0
 -- 1 to enable the module
 
 Barberchair.FullAppearanceChangeFeature.Enable = 1
+Barberchair.FullAppearanceChangeFeature.MoneyPrice = 500000
+-- 1 to enable the full appearance change feature, you can add a price in copper
+
 Barberchair.RaceChangeFeature.Enable = 0
+Barberchair.RaceChangeFeature.MoneyPrice = 10000000
+-- 1 to enable the race change feature, you can add a price in copper
+
 Barberchair.FactionChangeFeature.Enable = 0
+Barberchair.FactionChangeFeature.MoneyPrice = 20000000
+-- 1 to enable the faction change feature, you can add a price in copper
+
 Barberchair.NameChangeFeature.Enable = 0
--- 1 to give each of this service to the barbershop chair
+Barberchair.NameChangeFeature.MoneyPrice = 2500000
+-- 1 to enable the name change feature, you can add a price in copper
 
 Barberchair.BaseFeature.Enable = 1
 Barberchair.BaseFeature.RaceExclusion = 9,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33

@@ -23,6 +23,12 @@
 #define ACTION_FACTION_CHANGE        35987654
 #define ACTION_NAME_CHANGE           35987655
 
+#define ACTION_CONFIRM_YES 35987661
+#define ACTION_CONFIRM_NO 35987662
+
+#define TECH_MSG_ERR_MONEY 35987671
+#define TECH_MSG_CANCEL 35987672
+
 class ModBarberchairScript : public GameObjectScript, public WorldScript
 {
 public:
@@ -47,17 +53,24 @@ private:
     static bool ModBarberchairEnabled;
     static bool BaseFeatureEnabled;
     static bool FullAppearanceChangeFeatureEnabled;
+    static uint32 FullAppearanceChangeCost;
     static bool RaceChangeFeatureEnabled;
+    static uint32 RaceChangeCost;
     static bool FactionChangeFeatureEnabled;
+    static uint32 FactionChangeCost;
     static bool NameChangeFeatureEnabled;
+    static uint32 NameChangeCost;
+
     static std::vector<uint8> BaseFeatureRaceExclusion;
     static bool ModIndividualProgressionIntegrationEnabled;
 
     static void MoveCharacterOnBarberchair(Player* player, GameObject* go);
+    static std::string FormatPrice(uint32 price);
     static std::vector<uint8> ParseRaceExclusions(const std::string& exclusionStr);
 
     static char const* GetBarberGossipString(LocaleConstant locale, int gossipId);
     static char const* GetBarberCommandString(LocaleConstant locale, int gossipId);
+    static char const* GetTechnicalString(LocaleConstant locale, int techMsgId);
 };
 
 void Addmod_barberchairScripts();
