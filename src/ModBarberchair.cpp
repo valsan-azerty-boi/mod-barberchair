@@ -62,7 +62,6 @@ bool ModBarberchairScript::OnGossipHello(Player* player, GameObject* go)
     LocaleConstant playerLocale = player->GetSession()->GetSessionDbLocaleIndex();
 
     uint32 availableOptions = 0;
-    uint32 uniqueActionId = 0;
 
     if (BaseFeatureEnabled)
     {
@@ -73,7 +72,6 @@ bool ModBarberchairScript::OnGossipHello(Player* player, GameObject* go)
         {
             AddGossipItemFor(player, GOSSIP_ICON_DOT, GetBarberGossipString(playerLocale, ACTION_BASE_BARBER), GOSSIP_SENDER_MAIN, ACTION_BASE_BARBER);
             availableOptions++;
-            uniqueActionId = ACTION_BASE_BARBER;
         }
     }
 
@@ -81,28 +79,24 @@ bool ModBarberchairScript::OnGossipHello(Player* player, GameObject* go)
     {
         AddGossipItemFor(player, GOSSIP_ICON_DOT, GetBarberGossipString(playerLocale, ACTION_APPEARANCE_CHANGE), GOSSIP_SENDER_MAIN, ACTION_APPEARANCE_CHANGE);
         availableOptions++;
-        uniqueActionId = ACTION_APPEARANCE_CHANGE;
     }
 
     if (RaceChangeFeatureEnabled)
     {
         AddGossipItemFor(player, GOSSIP_ICON_DOT, GetBarberGossipString(playerLocale, ACTION_RACE_CHANGE), GOSSIP_SENDER_MAIN, ACTION_RACE_CHANGE);
         availableOptions++;
-        uniqueActionId = ACTION_RACE_CHANGE;
     }
 
     if (FactionChangeFeatureEnabled)
     {
         AddGossipItemFor(player, GOSSIP_ICON_DOT, GetBarberGossipString(playerLocale, ACTION_FACTION_CHANGE), GOSSIP_SENDER_MAIN, ACTION_FACTION_CHANGE);
         availableOptions++;
-        uniqueActionId = ACTION_FACTION_CHANGE;
     }
 
     if (NameChangeFeatureEnabled)
     {
         AddGossipItemFor(player, GOSSIP_ICON_DOT, GetBarberGossipString(playerLocale, ACTION_NAME_CHANGE), GOSSIP_SENDER_MAIN, ACTION_NAME_CHANGE);
         availableOptions++;
-        uniqueActionId = ACTION_NAME_CHANGE;
     }
 
     if (availableOptions == 0)
