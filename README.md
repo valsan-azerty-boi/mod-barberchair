@@ -20,8 +20,6 @@ This module allows players to get different character services directly from the
 
 This module is already localized for: English, German, Spanish and French
 
-Next, I should introduce a pricing feature to not give all of this services for zero gold.
-
 ---
 
 ### How to install
