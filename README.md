@@ -4,9 +4,11 @@
 
 ### This module extends the barbershop chair features for [AzerothCore](http://www.azerothcore.org)
 
+<!-- 
 - Latest build status with azerothcore:
 
-<!-- [![Build Status](https://github.com/valsan-azerty-boi/mod-barberchair/workflows/core-build/badge.svg)](https://github.com/valsan-azerty-boi/mod-barberchair) -->
+[![Build Status](https://github.com/valsan-azerty-boi/mod-barberchair/workflows/core-build/badge.svg)](https://github.com/valsan-azerty-boi/mod-barberchair)
+-->
 
 #### Features:
 
