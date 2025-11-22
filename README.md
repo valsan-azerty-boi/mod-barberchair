@@ -6,7 +6,7 @@
 
 - Latest build status with azerothcore:
 
-[![Build Status](https://github.com/valsan-azerty-boi/mod-barberchair/workflows/core-build/badge.svg)](https://github.com/valsan-azerty-boi/mod-barberchair)
+<!-- [![Build Status](https://github.com/valsan-azerty-boi/mod-barberchair/workflows/core-build/badge.svg)](https://github.com/valsan-azerty-boi/mod-barberchair) -->
 
 #### Features:
 
